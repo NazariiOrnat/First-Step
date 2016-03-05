@@ -2,22 +2,22 @@ $(document).ready(function (){
 
     $(."scroll").click(function (){
         $('html, body').animate({
-            scrollTop: $("#home").offset().top
+            scrollTop: $("#home").offset()
         }, 1500);
     });
     $(."scroll").click(function (){
         $('html, body').animate({
-            scrollTop: $("#about-me").offset().top
+            scrollTop: $("#about-me").offset()
         }, 1500);
     });
     $(."scroll").click(function (){
         $('html, body').animate({
-            scrollTop: $("#prof-sills").offset().top
+            scrollTop: $("#prof-sills").offset()
         }, 1500);
     });
     $(."scroll").click(function (){
         $('html, body').animate({
-            scrollTop: $("#contact").offset().top
+            scrollTop: $("#contact").offset()
         }, 1500);
     });
 });
