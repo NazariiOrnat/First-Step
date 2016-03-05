@@ -1,0 +1,40 @@
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    opacity: 0.7;
+}
+#home {
+    text-align: center;
+}
+#main {
+    text-align: center;
+}
+#undermain{
+    text-align: center;
+}
+#about{
+    text-align: center;
+}
+.sectionimage {
+    height: 100%;
+    background: url(../img/background.jpg) no-repeat bottom center scroll;
+    background-color: #000;
+    background-size:;
+    color: #fff;
+    padding: 250px;
+}
+#myphoto{
+    max-heightheight: 100px;
+    max-widthwidth: 100px;
+}
+.outer {
+    position: relative;
+}
+.inner {
+
+    margin: 100px 150px 100px 80px;
+}
+.h3 {
+    text-align: center;
+}
