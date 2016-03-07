@@ -1,4 +1,4 @@
-$(document).ready(function (){
+ $(document).ready(function (){
 
     $("#jhome").click(function (){
         $('html, body').animate({
@@ -22,7 +22,7 @@ $(document).ready(function (){
     });
 });
 
-$(document).on('click.nav','.navbar-collapse.in',function(e) {
+ $(document).on('click.nav','.navbar-collapse.in',function(e) {
     if( $(e.target).is('a') ) {
         $(this).removeClass('in').addClass('collapse');
     }

@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <title>Ornat Nazarii</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/circle.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="50" id="body">
     <header>
         <nav class="navbar navbar-inverse navbar-fixed-top" id="navid">
             <div class="container-fluid">
@@ -21,21 +22,21 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a id="jhome" href="#home">Home</a></li>
-                        <li><a id="jabout-me" href="#about-me">About me</a></li>
-                        <li><a id="jprof-skills" href="#prof-sills">Professional skills</a></li>
-                        <li><a id="jcontact" href="#contact">Contact</a></li>
+                        <li id="jhome"><a href="#home">Home</a></li>
+                        <li id="jabout-me"><a href="#about-me">About me</a></li>
+                        <li id="jprof-skills"><a href="#prof-sills">Professional skills</a></li>
+                        <li id="jcontact"><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
             <article>
                 <section id="home" class="container-fluid">
-                    <div class="row">
-                            <div class="sectionimage">
-                                <h1 class="animated pulse">Hello</h1>
-                                <h2>I`m Nazar</h2>
-                            </div>
+                    <div>
+                        <div class="sectionimage">
+                            <h1 class="text-center">Hello</h1>
+                            <h2 class="text-center">I`m Nazar</h2>
+                        </div>
                     </div>
                 </section>
                 <section id="about-me">
@@ -43,20 +44,20 @@
                         <div class="row">
                             <div class="col-md-4 ">
                                 <div id="myphoto">
-                                    <img src="img/my-photo.jpg">
+                                    <img src="img/my-photo.jpg" class="img-responsive" alt="Photo from Hoverla">
                                 </div>
                             </div>
                             <div class="col-md-4 ">
-                                <h3 id="about">Information about me</h3>
+                                <h3 id="about">Welcome</h3>
                                 <p>
-                                    Consider a sophisticated application such as webmail client. In essence, it’s a complex JavaScript program running on a single HTML page.
-                                    The user loads the URL and is presented with a list of emails.
-                                    They click a title and the email content is retrieved using Ajax and displayed.
-                                    They now want to return to the email list; what do they do?……click the browser’s back button.
-                                    Bang. The application closes and returns to the page they were viewing prior to accessing the application.
-                                    Or, if it’s a new browser tab, the back button is disabled and can’t be clicked.
-                                    So we have a problem. Our webmail client doesn’t support the one browser control most users understand.
-                                    There are solutions. Some involve changing the hash mark (#name) in the URL so the state can be retained.
+                                    Dear guests of my web site,
+                                    my name is Nazarii Ornat. I am young and resourceful student of Ivan Franko National University.
+                                    I am in love with nature and obsessed with its protection.
+                                    I study ecology, take part in various projects connected to waste managment and recycling, raise awareness
+                                    of people about the environmental problems by writing articles and research papers on the topic.
+                                    As far as my personality is concerned, I am determined and decisive, able to build and implement sophisticated plans.
+                                    I am a reliable team player and initiative person. Whenever my personal development is concerned, my motto is ‘The sky is the limit’.
+                                    Thank you!
                                     It’s not perfect, but works in all browsers.
                                 </p>
                             </div>
@@ -85,12 +86,25 @@
                         </div>
                     </div>
                 </section>
+                <br>
                 <section id="prof-sills" class="container-fluid">
                     <h2 class="text-center">Professionall skills</h2>
-                    <div class="col-md-4 col-xs-12 ">
-                        <div class="inner">
-                            <div class="c100 p35 big ">
-                                <span>35%</span>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12 ">
+                            <div class="inner">
+                                <div class="c100 p25 big ">
+                                    <span>HTML5</span>
+                                        <div class="slice">
+                                            <div class="bar"></div>
+                                            <div class="fill"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="col-md-4 col-xs-12 ">
+                            <div class="inner">
+                                <div class="c100 p20 big ">
+                                    <span>CSS3</span>
                                     <div class="slice">
                                         <div class="bar"></div>
                                         <div class="fill"></div>
@@ -98,73 +112,54 @@
                                 </div>
                             </div>
                         </div>
-                    <div class="col-md-4 col-xs-12 ">
-                        <div class="inner">
-                            <div class="c100 p35 big ">
-                                <span>35%</span>
-                                <div class="slice">
-                                    <div class="bar"></div>
-                                    <div class="fill"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-xs-12 ">
-                        <div class="inner">
-                            <div class="c100 p35 big ">
-                                <span>35%</span>
-                                <div class="slice">
-                                    <div class="bar"></div>
-                                    <div class="fill"></div>
+                        <div class="col-md-4 col-xs-12 ">
+                            <div class="inner">
+                                <div class="c100 p15 big ">
+                                    <span>JS</span>
+                                    <div class="slice">
+                                        <div class="bar"></div>
+                                        <div class="fill"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
                 <section id="contact">
-                    <div class="container">
+                    <div class="container-fluid">
                         <div class="row">
-                            <div class=" col-md-offset-2 col-md-8 col-md-offset-2">
-                                <form class="form-horizontal">
-                                    <fieldset>
-                                        <legend>Contact</legend>
-                                        <div class="form-group">
-                                            <label for="textArea" class="col-lg-2 control-label">Name</label>
-                                            <div class="col-lg-10">
-                                                <input type="textArea" class="form-control" id="textArea" placeholder="Name">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-                                            <div class="col-lg-10">
-                                                <input type="text" class="form-control" id="inputEmail" placeholder="Email">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="textArea" class="col-lg-2 control-label">Message</label>
-                                            <div class="col-lg-10">
-                                                <textarea class="form-control" rows="3" id="textArea"></textarea>
-                                                <span class="help-block"></span>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-lg-10 col-lg-offset-2">
-                                                <button type="submit" class="btn btn-success">Submit</button>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                                </form>
+                            <div>
+                                <h3>Contact with me</h3>
                             </div>
-                        </div>
-                    </div>
-                </section>
-            </article>
-        <footer class="container-fluid text-center">
-            <p>Footer Text</p>
-        </footer>
-    </header>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="js/index.js"></script>
-</body>
-</html>
+                            <div class="col-md-offset-2 col-md-8 col-md-offset-2 ">
+                                <form method="POST" action="////formspree.io/nazarornatlviv@gmail.com">
+                                    <input id="styleemail" type="email" name="_replyto" placeholder="Your email" />
+                                    <textarea id="stylemessage" name="message" rows="10" placeholder="Your message"></textarea>
+                                    <label>
+                                        <input type="text" name="_gotcha" style="display:none">
+                                    </label>
+                                    <br>
+                                    <button id="button" class="btn btn-primary " type="submit">Send</button>
+                                </form>
+                             </div>
+                         </div>
+                     </div>
+                 </section>
+             </article>
+        <br>
+         <footer>
+             <div class="container-fluid">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://www.facebook.com/nazarii.ornat" target="_blank" role="button"><i class="fa fa-facebook-square fa-3x"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/nazarii-ornat-634911115?trk=hp-identity-name" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a></li>
+                    <li><a href="https://github.com/NazariiOrnat" target="_blank"><i class="fa fa-github-square fa-3x"></i></a></li>
+                </ul>
+             </div>
+         </footer>
+     </header>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+ <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ <script src="js/index.js"></script>
+ </body>
+ </html>
+
